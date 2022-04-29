@@ -49,7 +49,7 @@ class Game {
           duration: 1500,
         });
 
-        if ((currentLetter.className === 'key yellow' || currentCell.className === 'key green') && color === 'grey') continue;
+        if ((currentLetter.className === 'key yellow' || currentLetter.className === 'key green') && color === 'grey') continue;
         if (currentLetter.className === 'key green' && color === 'yellow') continue;
 
         currentLetter.className = 'key '.concat(color);
