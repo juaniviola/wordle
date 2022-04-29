@@ -1,0 +1,79 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  margin: 0;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: white;
+}
+
+#app .title h1 {
+  text-transform: uppercase;
+  margin: 8px !important;
+}
+
+#app .title .divider {
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+}
+
+.try {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.letter {
+  width: 50px;
+  height: 50px;
+  margin: 5px 0 0 5px;
+  border: 2px solid white;
+  font-weight: bold;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.line:nth-child(1) {
+  margin-top: 5px;
+}
+
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  min-height: 55px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  margin: 5px 0 0 5px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.key:hover {
+  background-color: rgb(185, 195, 204);
+}
+
+.green { background-color: green; color: white; }
+.yellow { background-color: rgb(214, 214, 105); color: white; }
+.grey { background-color: grey; color: white; }
