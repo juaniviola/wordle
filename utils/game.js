@@ -66,7 +66,7 @@ class Game {
       }
     }
 
-    if (code.startsWith('Key') && this.lastIndex < 5) {
+    if ((code.startsWith('Key') || code === 'Semicolon') && this.lastIndex < 5) {
       this.userWords[this.lastTry][this.lastIndex] = key.toUpperCase();
       document.getElementById(`w:${this.lastTry}-${this.lastIndex}`).innerHTML = key.toUpperCase();
       this.lastIndex += 1;
